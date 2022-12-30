@@ -1,0 +1,16 @@
+<!--p style="color: green"><%= notice %></p-->
+
+<h1>Inv details</h1>
+
+<div id="inv_details">
+  <% @inv_details.each do |inv_detail| %>
+    <% if inv_detail.user == current_user %>
+      <%= render inv_detail %>
+      <p>
+        <%= link_to "Show this inv detail", inv_detail %>
+      </p>
+    <% end %>  
+  <% end %>
+</div>
+
+<%= link_to "New inv detail", new_inv_detail_path %>

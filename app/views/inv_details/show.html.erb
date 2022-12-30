@@ -1,0 +1,10 @@
+<!--p style="color: green"><%= notice %></p-->
+
+<%= render @inv_detail %>
+
+<div>
+  <%= link_to "Edit this inv detail", edit_inv_detail_path(@inv_detail) %> |
+  <%= link_to "Back to inv details", inv_details_path %>
+
+  <%= button_to "Destroy this inv detail", @inv_detail, method: :delete %>
+</div>
